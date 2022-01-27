@@ -5,7 +5,7 @@
   </div>
   <div class="card__description"><p v-if="description">{{description}}</p></div>
   <div class="card__stats">
-    <stats :stars="{stars}" :forks="{forks}" />
+    <stats :stars="stars" :forks="forks" />
   </div>
 </div>
 </template>
