@@ -55,13 +55,7 @@
           </li>
         </ul>
 </div>
-       <li class="item" v-for="item in items" :key="item.id">
-          <feed
-          v-bind="getFeedData(item)"
-          dark
-          />
-        </li>
-    </div>
+     </div>
 </template>
 
 <script>
