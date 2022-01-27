@@ -44,7 +44,9 @@
 <div class="container">
    <ul class="posts__list">
           <li v-for="item in items" :key="item.id" class="posts__item">
-            <feed>
+            <feed 
+              :avatar="item.owner.avatar_url"
+              :username="item.owner.login" >
               <template #card><card
               :stars="item.stargazers_count"
               :forks="item.forks"
