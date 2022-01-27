@@ -1,6 +1,6 @@
  <template>
 <div class="feed__user">
-    <user />
+      <user :name="username" :src="avatar" />
 </div>
 
 <div class="post__card">
@@ -26,7 +26,7 @@ import { toggler } from '../../components/toggler'
 export default {
   name: 'Feed',
   props: {
-
+    avatar: String,
     username: String,
     stars: Number,
     dark: Boolean
